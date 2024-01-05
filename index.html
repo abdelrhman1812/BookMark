@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bookmark</title>
+  <link rel="stylesheet" href="css/all.css" />
+  <link rel="stylesheet" href="css/normaliz.css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+
+  <div class="container py-5">
+
+    <div class="row">
+      <div class="loader text-center">
+        <h1> <i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites</h1>
+      </div>
+      <div class="allInputs py-5">
+        <div class="input-container">
+          <label for="name"><i class="fa-solid fa-bookmark"></i> Site Name</label>
+          <input type="text" name="text" class="input my-3" placeholder="Bookmark Name" id="inputName" value="">
+          <div class="highlight"></div>
+        </div>
+        <div class="input-container">
+          <label for="url"><i class="fa-solid fa-file-lines"></i> Site URL</label>
+          <input type="text" name="text" class="input my-3" placeholder="Website Url" id="inputUrl" value="">
+          <div class="highlight"></div>
+        </div>
+        <button class="btnadd btn " id="btnAdd">
+          Add
+        </button>
+        <button class="btnadd btn clearall d-none " id="clearall">
+          Clear All
+        </button>
+
+      </div>
+
+
+    </div>
+
+
+
+
+    <table class="table table-striped text-center">
+      <thead>
+        <tr>
+          <th>Index</th>
+          <th>Website Name</th>
+          <th>Visit</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody id="tbody">
+
+      </tbody>
+    </table>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+  <script src="JS/bootstrap.bundle.min.js"></script>
+  <script src="JS/main.js"></script>
+</body>
+
+</html>

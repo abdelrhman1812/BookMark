@@ -1,0 +1,176 @@
+@keyframes animate8345 {
+
+    0%,
+    100% {
+        filter: hue-rotate(0deg);
+    }
+
+    50% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+.loader {
+    color: rgb(0, 0, 0);
+    background: linear-gradient(to right, #2d60ec, #3ccfda);
+    font-size: 30px;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: animate8345 9s linear infinite;
+    font-weight: bold;
+}
+
+h1 {
+    font-family: serif
+}
+
+body {
+    background-color: #e8e8e8;
+    font-family: serif
+}
+
+.input-container {
+    position: relative;
+}
+
+.input {
+    font-size: 1em;
+    padding: 0.6em 1em;
+    border: none;
+    border-radius: 6px;
+    background-color: #f8f8f8;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    color: #333;
+}
+
+.input:hover {
+    background-color: #f2f2f2;
+}
+
+.input:focus {
+    outline: none;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.input::placeholder {
+    color: #999;
+}
+
+.highlight {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #6c63ff;
+    transition: width 0.3s ease;
+}
+
+.input:focus+.highlight {
+    width: 100%;
+}
+
+/* Optional: Animation on focus */
+@keyframes input-focus {
+    from {
+        transform: scale(1);
+        box-shadow: 0 0 0 rgba(0, 0, 0, 0.1);
+    }
+
+    to {
+        transform: scale(1.02);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+}
+
+.input:focus {
+    animation: input-focus 0.3s ease;
+}
+
+@media (max-width:551px) {
+    td {
+        padding: 0 !important;
+    }
+
+}
+
+
+
+/* Btn Add */
+
+.btnadd {
+    border: 0;
+    background-color: #2835ba;
+    color: #ffffff;
+    font-weight: Bold;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    width: 200px;
+}
+
+.btnadd:hover {
+    background-color: #2835ba;
+    box-shadow: 0 0 20px #6fc5ff50;
+    transform: scale(0.9);
+    color: #fff;
+}
+
+.btnadd:active {
+    background-color: #3d94cf;
+    transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+    box-shadow: none;
+    transform: scale(0.98);
+}
+
+.clearall {
+    background-color: rgb(230, 34, 77) !important;
+
+}
+
+/* btn Delete */
+
+.btn-vist {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    border-radius: 10px;
+    border: none;
+    padding: 5px 10px;
+    background-color: #3d94cf;
+    color: #ffffff;
+    width: 100%;
+    margin-top: 4px;
+
+}
+
+.btn-vist>svg {
+    margin-left: 5px;
+    transition: all 0.4s ease-in;
+}
+
+.btn-vist:hover>svg {
+    font-size: 1.2em;
+    transform: translateX(3px);
+}
+
+.btn-vist:hover {
+    box-shadow: 10px 10px 40px #d1d1d1;
+    transform: translateY(-1px);
+}
+
+/* btnupdate */
+.bg {
+    background-color: #3d94cf;
+    color: #fff;
+}
+
+.bg:hover {
+    background-color: #3d94cf;
+    color: #fff;
+}
